@@ -1,0 +1,8 @@
+* {
+  background-color: grey;
+}
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}

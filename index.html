@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Etch A Sketch</title>
   </head>
   <body>
@@ -13,7 +14,12 @@
     <main class="main">
       <div class="menu">
         <input type="color" name="color_picker" id="cp" />
+        <button class="black_mode button" type="button">Black Mode</button>
+        <button class="erase button" type="submit">Erase</button>
+        <p class="range"></p>
+        <input type="range" min="10" max="100" value="10" class="slider" />
       </div>
     </main>
+    <footer class="footer"><p>Made By Lion Lev</p></footer>
   </body>
 </html>

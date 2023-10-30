@@ -52,9 +52,6 @@ button:hover {
   background-color: white;
   transition: 300ms ease-in-out;
 }
-.range {
-  transition: 300ms ease-in-out;
-}
 .grid {
   width: 500px;
   height: 500px;

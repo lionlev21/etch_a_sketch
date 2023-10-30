@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+
     <title>Etch A Sketch</title>
   </head>
   <body>
@@ -13,13 +14,37 @@
     </header>
     <div class="container">
       <main class="main">
-        <div class="menu">
-          <input type="color" name="color_picker" id="cp" />
-          <button class="black_mode button" type="button">Black Mode</button>
-          <button class="erase button" type="submit">Erase</button>
-          <p class="range"></p>
-          <input type="range" min="10" max="100" value="10" class="slider" />
-        </div>
+        <nav class="menu">
+          <input
+            type="color"
+            name="color_picker"
+            id="cp"
+            value="#000000"
+            onchange="changeColor(this.value)"
+          />
+          <button
+            class="random"
+            value="random"
+            onclick="changeColor(this.value)"
+          >
+            Random
+          </button>
+          <button class="erase" type="button" onclick="changeColor('white')">
+            Erase
+          </button>
+          <button class="reset" type="button" onclick="resetBoard()">
+            Reset
+          </button>
+          <h1 class="range"></h1>
+          <input
+            type="range"
+            min="10"
+            max="100"
+            value="10"
+            class="slider"
+            onchange="changeSize(this.value)"
+          />
+        </nav>
         <div class="grid"></div>
       </main>
 

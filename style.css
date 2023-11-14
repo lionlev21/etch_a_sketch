@@ -53,8 +53,8 @@ button:hover {
   transition: 300ms ease-in-out;
 }
 .grid {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   display: grid;
   border: 2px solid black;
 }

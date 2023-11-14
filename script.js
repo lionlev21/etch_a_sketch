@@ -19,10 +19,11 @@ function createGrid(x) {
     const square = document.createElement("div");
     square.addEventListener("mouseover", colorSquare);
     square.style.backgroundColor = "white";
+    square.style.border = "1px solid black";
     grid.insertAdjacentElement("beforeend", square);
   }
 }
-createGrid(10);
+createGrid(16);
 function changeSize(input) {
   createGrid(input);
 }
